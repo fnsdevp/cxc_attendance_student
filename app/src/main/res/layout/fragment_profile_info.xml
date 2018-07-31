@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="profileInfo"
+            type="com.fnspl.hiplaedu_student.fragment.ProfileInfoFragment" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/m10"
+            android:background="@color/background_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/background_color"
+                tools:context="com.fnspl.hiplaedu_student.fragment.ProfileInfoFragment">
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_145sdp"
+                    android:layout_marginTop="@dimen/m30"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/big_no_image" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/m10"
+                    android:text="Avishek Mishra"
+                    android:textColor="@color/textColorBlue"
+                    android:textSize="@dimen/text_extra_extra_larg"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_marginRight="@dimen/m10"
+                    android:background="@drawable/background_corner"
+                    android:orientation="vertical"
+                    android:padding="@dimen/m7">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/m10"
+                                android:text="@string/semester"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="@dimen/text_medium"
+                                app:font="@{`futura_bk_bt`}"/>
+
+                            <TextView
+                                android:id="@+id/tv_semester"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="VI"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="@dimen/text_medium"
+                                app:font="@{`futura_bk_bt`}"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/m10"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/section"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="@dimen/text_medium"
+                                app:font="@{`futura_bk_bt`}"/>
+
+                            <TextView
+                                android:id="@+id/tv_section"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="B"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="@dimen/text_medium"
+                                app:font="@{`futura_bk_bt`}"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m10"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/m10"
+                                android:text="@string/stream"
+                                android:textColor="@color/textColorBlack"
+                                android:textSize="@dimen/text_medium" />
+
+                            <TextView
+                                android:id="@+id/tv_stream"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Science"
+                                android:textColor="@color/textColorBlack"
+                                android:textSize="@dimen/text_medium" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/m10"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/year"
+                                android:textColor="@color/textColorBlack"
+                                android:textSize="@dimen/text_medium" />
+
+                            <TextView
+                                android:id="@+id/tv_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="2017"
+                                android:textColor="@color/textColorBlack"
+                                android:textSize="@dimen/text_medium" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m10"
+                        android:weightSum="100">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="28">
+
+                            <ImageView
+                                android:layout_width="@dimen/m20"
+                                android:layout_height="@dimen/m20"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_mobile"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="@dimen/m5"
+                            android:text=":"
+                            android:textColor="@color/textColorBlack"
+                            android:textSize="@dimen/text_medium"
+                            app:font="@{`futura_bk_bt`}"/>
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/m5"
+                            android:layout_weight="70"
+                            android:text="+91 98012 31265"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_medium"
+                            app:font="@{`futura_bk_bt`}"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/m10"
+                        android:layout_marginBottom="@dimen/m10"
+                        android:weightSum="100">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="28">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_larg"
+                                android:textColor="@color/textColorBlack"
+                                android:layout_marginRight="@dimen/m3"
+                                android:text="@string/atrate"
+                                android:layout_alignParentRight="true"
+                                app:font="@{`futura_hv_bt`}"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="@dimen/m5"
+                            android:text=":"
+                            android:textColor="@color/textColorBlack"
+                            android:textSize="@dimen/text_medium"
+                            app:font="@{`futura_bk_bt`}"/>
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/m5"
+                            android:layout_weight="70"
+                            android:text="abc@gmail.com"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="@dimen/text_medium"
+                            android:ellipsize="end"
+                            app:font="@{`futura_bk_bt`}"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/m10"
+                        android:layout_marginTop="@dimen/m15"
+                        android:gravity="center"
+                        android:text="Synergy Building, 5th Floor, Thakdari Roead, Kolkata - 700028"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

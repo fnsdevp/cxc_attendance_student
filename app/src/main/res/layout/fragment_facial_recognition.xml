@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="facialRecognition"
+            type="com.fnspl.hiplaedu_student.fragment.FacialRecognitionFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context="com.fnspl.hiplaedu_student.fragment.AttendanceStartFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/m10"
+                android:text="@string/selfi"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorBlue"
+                android:textSize="@dimen/text_extra_larg"
+                app:font="@{`futura_bk_bt`}"/>
+
+            <ImageView
+                android:id="@+id/iv_hiden_image"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:layout_below="@+id/rl_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_acuracy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="hello"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_210sdp"
+                    android:layout_margin="@dimen/m25"
+                    android:background="@drawable/img_background"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/m10">
+
+                    <Button
+                        android:id="@+id/btn_take_image"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginRight="@dimen/m15"
+                        android:background="@drawable/gray_button"
+                        android:text="@string/take_image"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_normal"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginLeft="@dimen/m15"
+                        android:background="@drawable/gray_button"
+                        android:text="@string/submit"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_normal"
+                        app:font="@{`futura_bk_bt`}" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>
+

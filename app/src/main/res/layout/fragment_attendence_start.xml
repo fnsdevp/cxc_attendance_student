@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="attendence"
+            type="com.fnspl.hiplaedu_student.fragment.AttendanceStartFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context="com.fnspl.hiplaedu_student.fragment.ClassStartFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/m10"
+                android:text="Class Name"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorBlue"
+                android:textSize="@dimen/text_extra_larg"
+                app:font="@{`futura_bk_bt`}"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/m10"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginLeft="@dimen/m10"
+                        android:layout_weight="40"
+                        android:text="@string/teacher_name"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <TextView
+                        android:id="@+id/tv_teacher_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/m5"
+                        android:layout_weight="60"
+                        android:text="Kuntal Chakraborty"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/m10"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginLeft="@dimen/m10"
+                        android:layout_weight="40"
+                        android:text="@string/period"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <TextView
+                        android:id="@+id/tv_period"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/m5"
+                        android:layout_weight="60"
+                        android:text="2"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/m10"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginLeft="@dimen/m10"
+                        android:layout_weight="40"
+                        android:text="@string/subject"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/m5"
+                        android:layout_weight="60"
+                        android:text="Android"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_below="@+id/tv_class_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/m20">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_95sdp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/tv_countdown_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="01m : 40s"
+                            android:textColor="@color/textColorBlack"
+                            android:textSize="@dimen/text_timer"
+                            app:font="@{`futura_bk_bt`}"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mark_attendance"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_larg"
+                    app:font="@{`futura_bk_bt`}"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_marginRight="@dimen/m10"
+                    android:layout_marginTop="@dimen/m50"
+                    android:layout_marginBottom="@dimen/m20">
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginRight="@dimen/m15"
+                        android:background="@drawable/gray_button"
+                        android:text="@string/yes"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_extra_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginLeft="@dimen/m15"
+                        android:background="@drawable/red_button"
+                        android:text="@string/no"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_extra_larg"
+                        app:font="@{`futura_bk_bt`}"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

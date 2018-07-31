@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:orientation="vertical" android:layout_width="@dimen/adapter_item_size"
+    android:layout_height="@dimen/adapter_item_size"
+    android:layout_marginRight="1dp"
+    android:background="@color/subject_selected">
+
+    <LinearLayout
+        android:layout_width="@dimen/adapter_item_size"
+        android:layout_height="@dimen/adapter_item_size"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_date_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MON"
+        android:textStyle="bold"
+        android:padding="@dimen/m5"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/text_larg" />
+    <TextView
+        android:id="@+id/tv_date_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="12th Aug 2017"
+        android:textStyle="bold"
+        android:padding="@dimen/m5"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/text_very_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

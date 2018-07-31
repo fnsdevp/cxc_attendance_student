@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="routine"
+            type="com.fnspl.hiplaedu_student.fragment.RoutineFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.fnspl.hiplaedu_student.fragment.RoutineFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editText_height"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/m10"
+                android:text="@string/routine"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorBlue"
+                android:textSize="@dimen/text_extra_larg" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hv_days"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/adapter_item_size"
+            android:layout_below="@+id/rl_top"
+            android:scrollbars="none">
+
+            <com.fnspl.hiplaedu_student.widget.AdapterHorizontalLinearLayout
+                android:id="@+id/subject_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/adapter_item_size" />
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_routine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hv_days"/>
+    </RelativeLayout>
+
+</layout>

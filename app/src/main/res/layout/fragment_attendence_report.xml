@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="report"
+            type="com.fnspl.hiplaedu_student.fragment.AttendenceReportFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.fnspl.hiplaedu_student.fragment.RoutineFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editText_height"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/m10"
+                        android:text="@string/view_report"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorBlue"
+                        android:textSize="@dimen/text_extra_larg" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_top"
+                    android:scrollbars="none">
+
+                    <com.fnspl.hiplaedu_student.widget.AdapterHorizontalLinearLayout
+                        android:id="@+id/subject_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </HorizontalScrollView>
+
+                <lecho.lib.hellocharts.view.ColumnChartView
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_270sdp"
+                    android:layout_margin="@dimen/m15">
+                </lecho.lib.hellocharts.view.ColumnChartView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorWhite"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/m10"
+                        android:text="@string/avg_attendance"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/text_larg" />
+
+                    <TextView
+                        android:id="@+id/tv_total_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/m10"
+                        android:layout_alignParentRight="true"
+                        android:text="80%"
+                        android:textColor="@color/textColorGreen"
+                        android:textSize="@dimen/text_larg" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_95sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/color_hand"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#de000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/m10"
+        android:clipToPadding="false"
+        android:elevation="@dimen/m10"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="@dimen/m20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_view_underline_light"
+            android:padding="@dimen/m7"
+            android:text="@string/choseOption"
+            android:textSize="@dimen/text_normal"/>
+
+        <TextView
+            android:id="@+id/fetchImage_tvOpenCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10"
+            android:padding="@dimen/m10"
+            android:text="@string/openHighAccurecyNavigation"
+            android:textSize="@dimen/text_normal"/>
+
+        <TextView
+            android:id="@+id/fetchImage_tvOpenGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/m10"
+            android:text="@string/openPowerSavingNavigation"
+            android:textSize="@dimen/text_normal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/fetchImage_tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/m10"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_normal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

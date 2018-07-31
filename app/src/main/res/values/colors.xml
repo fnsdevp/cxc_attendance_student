@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhiteTransparent">#00fdfdfd</color>
+    <color name="colorPrimary">#00bceb</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#00bceb</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="textColorGray">#847d78</color>
+    <color name="textColorBlue">#00bceb</color>
+    <color name="textColorRed">#fd8b8b</color>
+    <color name="textColorGreen">#3ab54b</color>
+    <color name="colorGreydeep">#504f4f</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="text_color_gray">#9e9ea2</color>
+    <color name="background_color">#ffffff</color>
+    <color name="row_color">#daeaeaea</color>
+    <color name="et_green">#00bceb</color>
+    <color name="drawer_bg">#FFFFFF</color>
+    <color name="header_color">#F36523</color>
+    <color name="subject_selected">#ffffff</color>
+    <color name="btn_yellow">#F6831F</color>
+    <color name="subject_normal">#ebebeb</color>
+    <color name="date_normal">#ebebeb</color>
+    <color name="date_selected">#ffffff</color>
+    <color name="textColorYellow">#D07F22</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="dialogBgColor">#44101010</color>
+    <color name="mapBgColor">#ebebeb</color>
+</resources>

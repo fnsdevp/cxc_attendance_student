@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="attendence"
+            type="com.fnspl.hiplaedu_student.fragment.ManualAttendanceFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/tv_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginBottom="@dimen/m10"
+                    android:layout_marginLeft="@dimen/m25"
+                    android:layout_marginRight="@dimen/m25"
+                    android:layout_marginTop="@dimen/m10"
+                    android:paddingBottom="@dimen/m10"
+                    android:background="@drawable/comment_red">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/sorry"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_larg"
+                        android:layout_marginTop="@dimen/m15"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/m20"
+                        android:text="@string/not_authorized"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_medium"
+                        app:font="@{`futura_bk_bt`}"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_success"
+                    android:layout_margin="@dimen/m10"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/send_request_for_manual_attendance"
+                    android:textColor="@color/textColorRed"
+                    android:gravity="center"
+                    android:textSize="@dimen/_20ssp"
+                    app:font="@{`futura_bk_bt`}"/>
+
+                <Button
+                    android:id="@+id/btn_manual_attendance"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/btn_selector"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_21ssp"
+                    android:text="@string/send"
+                    android:layout_marginTop="@dimen/m30"
+                    android:layout_marginBottom="@dimen/m10"
+                    app:font="@{`futura_bk_bt`}"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

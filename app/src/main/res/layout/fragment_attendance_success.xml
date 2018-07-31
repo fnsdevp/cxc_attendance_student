@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="attendence"
+            type="com.fnspl.hiplaedu_student.fragment.AttendanceSuccessFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_95sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/color_hand"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/background_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/tv_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginBottom="@dimen/m10"
+                    android:layout_marginLeft="@dimen/m20"
+                    android:layout_marginRight="@dimen/m25"
+                    android:layout_marginTop="@dimen/m10"
+                    android:paddingBottom="@dimen/m10"
+                    android:background="@drawable/comment_green">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/congratulations"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_larg"
+                        android:layout_marginTop="@dimen/m10"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/m10"
+                        android:text="@string/successfuly_attendance"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_medium"
+                        android:gravity="center"
+                        app:font="@{`futura_bk_bt`}"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_success"
+                    android:layout_centerHorizontal="true"
+                    android:text="Class Name"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/_21ssp"
+                    android:gravity="center"
+                    app:font="@{`futura_bk_bt`}"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_below="@+id/tv_class_name"
+                    android:layout_margin="@dimen/m30">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/tv_countdown_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="20m : 40s"
+                            android:textColor="@color/textColorBlack"
+                            android:textSize="@dimen/text_timer"
+                            app:font="@{`futura_bk_bt`}"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

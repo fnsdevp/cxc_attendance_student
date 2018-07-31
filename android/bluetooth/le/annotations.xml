@@ -1,0 +1,5 @@
+<root>
+    <item name='android.bluetooth.le.BluetoothLeScanner'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

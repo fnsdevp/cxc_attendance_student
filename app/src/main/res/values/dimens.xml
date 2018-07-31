@@ -1,0 +1,51 @@
+<resources>
+    <dimen name="m2">@dimen/_1sdp</dimen>
+    <dimen name="m3">@dimen/_2sdp</dimen>
+    <dimen name="m5">@dimen/_4sdp</dimen>
+    <dimen name="m7">@dimen/_6sdp</dimen>
+    <dimen name="m8">@dimen/_7sdp</dimen>
+    <dimen name="m10">@dimen/_9sdp</dimen>
+    <dimen name="m15">@dimen/_14sdp</dimen>
+    <dimen name="m16">@dimen/_15sdp</dimen>
+    <dimen name="m18">@dimen/_16sdp</dimen>
+    <dimen name="m20">@dimen/_19sdp</dimen>
+    <dimen name="m25">@dimen/_23sdp</dimen>
+    <dimen name="m30">@dimen/_26sdp</dimen>
+    <dimen name="m32">@dimen/_28sdp</dimen>
+    <dimen name="m35">@dimen/_30sdp</dimen>
+    <dimen name="m38">@dimen/_33sdp</dimen>
+    <dimen name="m40">@dimen/_35sdp</dimen>
+    <dimen name="m45">@dimen/_39sdp</dimen>
+    <dimen name="m50">@dimen/_43sdp</dimen>
+    <dimen name="m55">@dimen/_46sdp</dimen>
+    <dimen name="m60">@dimen/_50sdp</dimen>
+    <dimen name="m65">@dimen/_56sdp</dimen>
+    <dimen name="m70">@dimen/_61sdp</dimen>
+    <dimen name="m75">@dimen/_67sdp</dimen>
+    <dimen name="m80">@dimen/_72sdp</dimen>
+    <dimen name="m85">@dimen/_77sdp</dimen>
+    <dimen name="m90">@dimen/_82sdp</dimen>
+    <dimen name="m100">@dimen/_87sdp</dimen>
+
+    <dimen name="editText_height">@dimen/_36sdp</dimen>
+    <dimen name="btn_height">@dimen/_40sdp</dimen>
+
+    <dimen name="text_very_small">@dimen/_7ssp</dimen>
+    <dimen name="text_small">@dimen/_9ssp</dimen>
+    <dimen name="text_normal">@dimen/_11ssp</dimen>
+    <dimen name="text_medium">@dimen/_13ssp</dimen>
+    <dimen name="text_larg">@dimen/_15ssp</dimen>
+    <dimen name="text_extra_larg">@dimen/_17ssp</dimen>
+    <dimen name="text_extra_extra_larg">@dimen/_19ssp</dimen>
+    <dimen name="text_timer">@dimen/_29ssp</dimen>
+    <dimen name="text_heading_large">@dimen/_40ssp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/_14sdp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/_14sdp</dimen>
+    <dimen name="nav_header_vertical_spacing">@dimen/_14sdp</dimen>
+    <dimen name="nav_header_height">@dimen/_130sdp</dimen>
+    <dimen name="fab_margin">@dimen/_14sdp</dimen>
+    <dimen name="toolbar_height">@dimen/_50sdp</dimen>
+    <dimen name="icon_toolbar">@dimen/_26sdp</dimen>
+    <dimen name="adapter_item_size">@dimen/_70sdp</dimen>
+</resources>
